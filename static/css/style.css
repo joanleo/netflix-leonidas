@@ -1,0 +1,201 @@
+@font-face{
+    font-family: Netflix;
+    src: url('../../fonts/AvenirNextLTPro-Regular.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: Netflix;
+    src: url('../../fonts/AvenirNextLTPro-Bold.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face{
+    font-family: Netflix;
+    src: url('../../fonts/AvenirNextLTPro-Regular.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: Netflix;
+    src: url('../../fonts/AvenirNextLTPro-Regular.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: Netflix;
+    src: url('../../fonts/AvenirNextLTPro-Regular.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: Netflix;
+    src: url('../../fonts/AvenirNextLTPro-Regular.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    background: #000000;
+    color: #ffffff;
+    margin: 0;
+    font-family: Netflix;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.header{
+    padding: 15px;
+    position: relative;
+    z-index: 2;
+    background-image: linear-gradient(to bottom, #000000 0%, #000000 50%, rgba(0,0,0,0.5) 85%, transparent 100%);
+}
+.navigation-item{
+    list-style: none;
+    text-align: center;
+}
+.navigation-item:hover a{
+    color: #ffffff;
+}
+.navigation{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-auto-columns: auto;
+    grid-auto-flow: column;
+    justify-content: space-around;
+}
+.featured{
+    margin-top: -90px;
+    position: relative;
+    overflow: hidden;
+}
+.featured-details{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: linear-gradient(to top, #000000 0%, #000000 40%, transparent 100%);
+}
+.tags{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+.tag{
+    display: flex;
+}
+.tag::before{
+    content: '•';
+    margin-right: 10px;
+    position: relative;
+    top:2px
+}
+.tag:first-child::before{
+    display: none;
+}
+.featured-actions{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 2em;
+}
+.button{
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 5px 1em 5px 0.5em;
+    height: 32px;
+    border-radius: 3px;
+    border: none;
+}
+.button::before{
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+.button-secondary{
+    background: none;
+    color: #ffffff;
+    font-size: 1.08rem;
+    min-width: 100px;
+    border: none;
+    cursor: pointer;
+}
+.button-secondary::before{
+    display: block;
+    content: "";
+    height: 25px;
+    width: 25px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+.button-secondary:hover{
+    transform: scale(1.2);
+}
+.icon-plus::before{
+    background: url('../../images/icons/plus.svg');
+}
+.icon-play::before{
+    background: url('../../images/icons/play.svg');
+}
+.icon-info::before{
+    background: url('../../images/icons/info.svg');
+}
+.list-content{
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.list-item{
+    display: inline-block;
+    margin-left: 10px;
+}
+.list-item:first-child{
+    margin: 0;
+}
+.list{
+    padding: 0 1em;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer{
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000000;
+    padding: 1em 0;
+}
+.tab-list{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    color: #6e6e6e;
+    padding-bottom: 0.5em;
+}
+a{
+    color: #6e6e6e;
+}
+.tab-item{
+    text-align: center;
+    font-size: .9em;
+}
+.tab-item svg{
+    display: block;
+    margin: auto;
+}
+.tab-icon path{
+    fill: #6e6e6e;
+}
+.tab-item:hover :is(path, span){
+    fill: #ffffff;
+    color: #ffffff;
+}
